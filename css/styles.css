@@ -1,0 +1,82 @@
+/*BEST PRACTICES*/
+/*
+	-indenting properly
+	-practical id and class names
+	-no inline styles
+	-use proficient selectores
+	-use shorthand properties and values
+	-group vendor prefixes
+	-use a minimal amount of id's and classes
+	-group common styles/use group selectors
+*/
+
+
+
+
+html * {
+  padding: 0;
+  margin: 0;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 10px;
+}
+
+section {
+	height: 100vh;
+}
+
+h1, h2, h3, nav a {
+	font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+	font-size: 7.6rem;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 5rem;
+}
+
+.head-dif:first-of-type {
+	font-size: 4.1rem;
+}
+
+.head-dif:last-of-type {
+	font-size: 4rem;
+}
+
+h2, h3 {
+	font-size: 4.6rem;
+}
+
+nav a {
+	font-size: 1.6rem;
+	text-decoration: none;
+	font-weight: 300;
+}
+
+nav a:hover {
+	font-weight: 700;
+}
+
+p {
+	font-size: 2.2rem;
+}
+
+
+
+
+@media all and (max-width: 720px) {
+
+}	
+
+@media all and (max-width: 480px) {
+
+}	
