@@ -113,5 +113,21 @@ h1+p {
 }	
 
 @media all and (max-width: 480px) {
+	h1 {
+		font-size: 3.8rem;
+		line-height: 3rem;
+	}
 
+	.head-dif {
+		font-size: 2.1rem;
+		line-height: 2.2rem;
+	}
+
+	.head-dif:last-of-type {
+		font-size: 2rem;
+	}
+
+	header div {
+		width: 85%;
+	}
 }	
