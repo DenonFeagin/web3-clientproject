@@ -79,8 +79,12 @@ nav {
 nav li {
 	padding: 5px;
 	border-bottom: 3px solid #fff;
-	display: inline;
+	/*display: inline;*/
 }
+
+nav li:last-of-type {
+	border-bottom: none;
+}	
 
 
 /*nav li a:hover {
