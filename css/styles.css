@@ -10,9 +10,6 @@
 	-group common styles/use group selectors
 */
 
-
-
-
 html * {
   padding: 0;
   margin: 0;
@@ -38,38 +35,58 @@ h1, h2, h3, nav a {
 }
 
 h1 {
-	font-size: 7.6rem;
+	color: #fff;
+	font-size: 8rem;
+	padding-top: 3.5rem;
 	text-align: center;
 	text-transform: uppercase;
-	line-height: 5rem;
+	line-height: 5.5rem;
 }
 
-.head-dif:first-of-type {
-	font-size: 4.1rem;
+.head-dif {
+	font-size: 4.6rem;
+	line-height: 3.5rem;
 }
 
 .head-dif:last-of-type {
-	font-size: 4rem;
+	font-size: 4.5rem;
 }
 
 h2, h3 {
 	font-size: 4.6rem;
 }
 
-nav a {
-	font-size: 1.6rem;
+nav li a {
+	color: #fff;
+	font-size: 1.4rem;
 	text-decoration: none;
-	font-weight: 300;
+	font-weight: 700;
+
+	/*border: 3px solid white;
+	padding: 2rem;*/
 }
 
-nav a:hover {
+/*nav li a:hover {
 	font-weight: 700;
-}
+}*/
 
 p {
-	font-size: 2.2rem;
+	font-size: 2rem;
 }
 
+.landing {
+	background-color: hotpink;
+	height: 100vh;
+}
+
+h1+div {
+	color: #fff;
+	padding-top: 4.5rem;
+	line-height: 3rem;
+	text-align: center;
+	margin: 0 auto;
+	width: 48%;
+}
 
 
 
