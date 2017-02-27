@@ -36,20 +36,20 @@ h1, h2, h3, nav a {
 
 h1 {
 	color: #fff;
-	font-size: 8rem;
-	padding-top: 3.5rem;
+	font-size: 6.8rem;
+	padding-top: .5rem;
 	text-align: center;
 	text-transform: uppercase;
-	line-height: 5.5rem;
+	line-height: 5rem;
 }
 
 .head-dif {
-	font-size: 4.6rem;
-	line-height: 3.5rem;
+	font-size: 3.8rem;
+	line-height: 3.2rem;
 }
 
 .head-dif:last-of-type {
-	font-size: 4.5rem;
+	font-size: 3.7rem;
 }
 
 h2, h3 {
@@ -66,26 +66,44 @@ nav li a {
 	padding: 2rem;*/
 }
 
+nav {
+	border: 3px solid #fff;
+	width: 104px;
+	display: inline-block;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+nav li {
+	padding: 5px;
+	border-bottom: 3px solid #fff;
+	display: inline;
+}
+
+
 /*nav li a:hover {
 	font-weight: 700;
 }*/
 
-p {
-	font-size: 2rem;
-}
 
 .landing {
 	background-color: hotpink;
 	height: 100vh;
 }
 
-h1+div {
-	color: #fff;
-	padding-top: 4.5rem;
-	line-height: 3rem;
+header div {
 	text-align: center;
 	margin: 0 auto;
-	width: 48%;
+	width: 40%;
+}
+
+h1+p {
+	color: #fff;
+	padding-top: 3.5rem;
+	line-height: 2.5rem;
+	font-size: 1.6rem;
 }
 
 
