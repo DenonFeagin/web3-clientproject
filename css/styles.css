@@ -10,9 +10,12 @@
 	-group common styles/use group selectors
 */
 
+/*basic styles*/
+
 html * {
   padding: 0;
   margin: 0;
+  font-size: 10px;
 }
 
 *, *:after, *:before {
@@ -23,16 +26,50 @@ html * {
 
 body {
   font-family: 'Work Sans', sans-serif;
-  font-size: 10px;
 }
 
-section {
+section, .landing {
 	height: 100vh;
+	min-height: 560px;
+}
+
+.flex, .fruit, .study, .coffee {
+	display: flex;
 }
 
 h1, h2, h3, nav a {
 	font-family: 'Roboto Slab', serif;
 }
+
+h2 {
+	font-size: 4.6rem;
+	padding-bottom: .5rem;
+}
+
+p {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.btn {
+	color: black;
+	display: inline-block;
+	font-size: 1.5rem;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	border: 6px solid #fb8dcb;
+}
+
+/*COLS*/
+ .lg-col-1-2 {
+ 	width: 50%;
+ }
+
+/*END*/
+
+/*LANDING*/
 
 h1 {
 	color: #fff;
@@ -50,10 +87,6 @@ h1 {
 
 .head-dif:last-of-type {
 	font-size: 3.7rem;
-}
-
-h2, h3 {
-	font-size: 4.6rem;
 }
 
 nav li a {
@@ -94,7 +127,6 @@ nav li:last-of-type {
 
 .landing {
 	background-color: hotpink;
-	height: 100vh;
 }
 
 header div {
@@ -110,13 +142,139 @@ h1+p {
 	font-size: 1.6rem;
 }
 
+/*END*/
 
+/*OUR PEOPLE*/
+
+/*END*/
+
+/*OUR FRUIT*/
+
+section:nth-of-type(2)>div:first-of-type {
+	background-color: #8ca7f9;
+}
+
+section:nth-of-type(2)>div:last-of-type div, section:nth-of-type(4)>div:first-of-type div, section:last-of-type>div:last-of-type div {
+	width: 70%;
+	max-width: 80%;
+	text-align: left;
+}
+
+section:nth-of-type(2)>div:last-of-type img, section:nth-of-type(4)>div:first-of-type img, section:last-of-type>div:last-of-type img {
+	padding-bottom: 2.5rem;
+}
+
+section:nth-of-type(2) .btn {
+	border-color: #8ca7f9;
+	margin-top: 50px;
+}
+
+section:nth-of-type(2) .btn:hover {
+	/*border-color: ;*/
+	background-color: #8ca7f9;
+	color: #fff;
+}
+
+section:nth-of-type(2) div, section:nth-of-type(4) div, section:last-of-type div {
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+/*END*/
+
+/*OUR BEANS*/
+
+/*END*/
+
+/*STUDY ZONE*/
+
+section:nth-of-type(4)>div:last-of-type {
+	background-color: #f9e88c;
+}
+
+section:nth-of-type(4) .btn {
+	border-color: #f9e88c;
+	margin-top: 50px;
+}
+
+section:nth-of-type(4) .btn:hover {
+	/*border-color: ;*/
+	background-color: #f9e88c;
+	color: #fff;
+}
+
+/*END*/
+
+/*FLAVOR & EXTRAS*/
+
+/*END*/
+
+/*MENU*/
+
+/*END*/
+
+/*CONTACT*/
+
+section:last-of-type>div:first-of-type {
+	background-color: #f9e88c;
+}
+
+section:last-of-type .btn {
+	border-color: #f9e88c;
+	margin-top: 50px;
+}
+
+section:last-of-type .btn:hover {
+	/*border-color: ;*/
+	background-color: #f9e88c;
+	color: #fff;
+}
+
+/*END*/
+
+/*ANIMATIONS*/
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  animation-duration: 2s;
+}
+
+/*END*/
 
 @media all and (max-width: 720px) {
 
 }	
 
 @media all and (max-width: 480px) {
+	/*GENERAL STYLES*/
+
+	.sm-col-1, .flex {
+		display: block;
+		width: 100%;
+
+		min-height: 326px;
+	}
+
+	/*LANDING*/
+
 	h1 {
 		font-size: 3.8rem;
 		line-height: 3rem;
@@ -134,4 +292,6 @@ h1+p {
 	header div {
 		width: 85%;
 	}
+
+	/*END*/
 }	
