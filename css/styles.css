@@ -187,7 +187,10 @@ h1+p {
 /*OUR FRUIT*/
 
 section:nth-of-type(2)>div:first-of-type {
-	background-color: #8ca7f9;
+	background-image: url(../img/fruit.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 section:nth-of-type(2)>div:last-of-type div, section:nth-of-type(4)>div:first-of-type div, section:last-of-type>div:last-of-type div {
@@ -226,7 +229,10 @@ section:nth-of-type(2) div, section:nth-of-type(4) div, section:last-of-type div
 /*STUDY ZONE*/
 
 section:nth-of-type(4)>div:last-of-type {
-	background-color: #f9e88c;
+	background-image: url(../img/study-zone.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 section:nth-of-type(4) .btn {
