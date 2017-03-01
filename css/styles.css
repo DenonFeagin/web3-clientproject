@@ -37,7 +37,7 @@ section, .landing {
 	display: flex;
 }
 
-h1, h2, h3, nav a {
+h1, h2, h3 {
 	font-family: 'Roboto Slab', serif;
 }
 
@@ -127,17 +127,17 @@ h1 {
 
 nav li a {
 	color: #fff;
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 	text-decoration: none;
-	font-weight: 700;
+	
 
 	/*border: 3px solid white;
 	padding: 2rem;*/
 }
 
 nav {
-	border: 3px solid #fff;
-	width: 104px;
+	/*border: 3px solid #fff;*/
+	width: 115px;
 	display: inline-block;
 
 	position: fixed;
@@ -146,23 +146,59 @@ nav {
 }
 
 nav li {
-	padding: 5px;
-	border-bottom: 3px solid #fff;
+	font-weight: 600;
+
+	padding: 8px;
+	border-bottom: 2.5px solid #fff;
+	border-top: 2.5px solid #fff;
+	border-left: 4px solid #fff;
+	border-right: 4px solid #fff;
 	/*display: inline;*/
 }
 
+nav li:first-of-type {
+	border-top: 4px solid #fff;
+}	
+
 nav li:last-of-type {
-	border-bottom: none;
+	border-bottom: 4px solid #fff;
 }	
 
 
-/*nav li a:hover {
+nav li:hover {
 	font-weight: 700;
-}*/
+}
+
+nav li:first-of-type:hover {
+	color: #fff;
+	background-color: #65e1c9;
+	border-color: #65e1c9;
+}
+
+nav li:nth-of-type(2):hover {
+	color: #fff;
+	background-color: #b5dbe6;
+	border-color: #b5dbe6;
+}
+
+nav li:nth-of-type(3):hover {
+	color: #fff;
+	background-color: #65e1c9;
+	border-color: #65e1c9;
+}
+
+nav li:last-of-type:hover {
+	color: #fff;
+	background-color: #f8dec7;
+	border-color: #f8dec7;
+}
 
 
 .landing {
-	background-color: hotpink;
+	background-image: url(../img/landing.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 header div {
@@ -181,6 +217,15 @@ h1+p {
 /*END*/
 
 /*OUR PEOPLE*/
+
+section:first-of-type>div, section:first-of-type .btn {
+	border-color: #b5dbe6;
+}
+
+section:first-of-type .btn:hover {
+	background-color: #b5dbe6;
+	color: #fff;
+}
 
 /*END*/
 
@@ -224,6 +269,15 @@ section:nth-of-type(2) div, section:nth-of-type(4) div, section:last-of-type div
 
 /*OUR BEANS*/
 
+section:nth-of-type(3)>div, section:nth-of-type(3) .btn {
+	border-color: #fc8dcb;
+}
+
+section:nth-of-type(3) .btn:hover {
+	background-color: #fc8dcb;
+	color: #fff;
+}
+
 /*END*/
 
 /*STUDY ZONE*/
@@ -241,7 +295,6 @@ section:nth-of-type(4) .btn {
 }
 
 section:nth-of-type(4) .btn:hover {
-	/*border-color: ;*/
 	background-color: #f9e88c;
 	color: #fff;
 }
@@ -259,17 +312,20 @@ section:nth-of-type(4) .btn:hover {
 /*CONTACT*/
 
 section:last-of-type>div:first-of-type {
-	background-color: #f9e88c;
+	background-image: url(../img/contact.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 section:last-of-type .btn {
-	border-color: #f9e88c;
 	margin-top: 50px;
+	border-color: #f8dec7;
 }
 
 section:last-of-type .btn:hover {
 	/*border-color: ;*/
-	background-color: #f9e88c;
+	background-color: #f8dec7;
 	color: #fff;
 }
 
