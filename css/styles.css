@@ -359,37 +359,138 @@ section:last-of-type .btn:hover {
 
 @media all and (max-width: 720px) {
 
+	h2 {
+		font-size: 2.8rem;
+	}
+
+	p {
+		font-size: 1.4rem;
+		line-height: 2.1rem;
+	}
+
+	.btn {
+		font-size: 1.4rem;
+	}
+
+	/*LANDING*/
+
+	h1 {
+		font-size: 4.3rem;
+		line-height: 3rem;
+	}
+
+	.head-dif {
+		font-size: 2.5rem;
+		line-height: 2rem;
+	}
+
+	.head-dif:last-of-type {
+		font-size: 2.4rem;
+	}
+
+	header div {
+		width: 57%;
+	}
+
+	h1+p {
+		font-size: 1.2rem;
+		line-height: 1.8rem;
+		padding-top: 50px;
+	}
+
+	.landing nav {
+		display: none;
+	}
+
+	.landing div {
+		padding-top: 45px;
+	}
+
+	/*END*/
+
+	.center {
+		width: 75%;
+	}
+
+	.center img {
+		padding-bottom: 1.2rem;
+	}
+
+	.center .btn {
+		margin-top: 40px;
+	}
+
 }	
 
 @media all and (max-width: 480px) {
 	/*GENERAL STYLES*/
 
 	.sm-col-1, .flex {
-		display: block;
 		width: 100%;
 
+		flex-direction: row;
+
 		min-height: 326px;
+	}
+
+	h2 {
+		font-size: 2.5rem;
+	}
+
+	p {
+		font-size: 1.1rem;
+		line-height: 1.8rem;
+	}
+
+	.btn {
+		font-size: 1.1rem;
 	}
 
 	/*LANDING*/
 
 	h1 {
-		font-size: 3.8rem;
-		line-height: 3rem;
-	}
-
-	.head-dif {
-		font-size: 2.1rem;
+		font-size: 3rem;
 		line-height: 2.2rem;
 	}
 
-	.head-dif:last-of-type {
-		font-size: 2rem;
+	.head-dif, .head-dif:last-of-type {
+		font-size: 1.8rem;
+		line-height: 2rem;
 	}
 
 	header div {
 		width: 85%;
 	}
 
+	.landing img {
+		width: 75px;
+	}
+
+	h1+p {
+		font-size: 1.2rem;
+		line-height: 1.8rem;
+		padding-top: 25px;
+	}
+
+	.landing nav {
+		display: none;
+	}
+
+	.landing div {
+		padding-top: 50px;
+	}
+
 	/*END*/
+
+	.center {
+		width: 94%;
+	}
+
+	.center img {
+		padding-bottom: 1rem;
+	}
+
+	.center .btn {
+		margin-top: 20px;
+	}
 }	
