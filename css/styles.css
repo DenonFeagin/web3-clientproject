@@ -37,13 +37,22 @@ section, .landing {
 	display: flex;
 }
 
-h1, h2, h3 {
+h1, h2 {
 	font-family: 'Roboto Slab', serif;
 }
 
 h2 {
 	font-size: 4.6rem;
 	padding-bottom: .5rem;
+}
+
+h3 {
+	font-weight: 700;
+}
+
+h3, .thin-sub {
+	font-size: 1.3rem;
+	text-transform: uppercase;
 }
 
 p {
@@ -69,13 +78,13 @@ p {
 
  /*SINGLE*/
 
- section:first-of-type, section:nth-of-type(3), section:first-of-type>div, section:nth-of-type(3)>div {
+ section:first-of-type, section:nth-of-type(3), section:nth-of-type(5), section:first-of-type>div, section:nth-of-type(3)>div {
  	justify-content: center;
  	align-items: center;
  	
  }
 
- section:first-of-type>div, section:nth-of-type(3)>div {
+ section:first-of-type>div, section:nth-of-type(3)>div, section:nth-of-type(5)>div {
  	height: 94%;
  	width: 97%;
 
@@ -302,6 +311,32 @@ section:nth-of-type(4) .btn:hover {
 /*END*/
 
 /*FLAVOR & EXTRAS*/
+
+ section:nth-of-type(5)>div {
+ 	align-content: center;
+ 	border-color: #0baaa2;
+ }
+
+section:nth-of-type(5)>div>div {
+	width: 95%;
+}
+
+.thin-sub {
+	font-weight: 300;
+}
+
+.prices, .prices span, .description {
+	font-size: 1.2rem;
+}
+
+.prices span {
+	font-weight: 700;
+	color: #0baaa2;
+}
+
+.lg-col-1-2-menu {
+	width: 45%;
+}
 
 /*END*/
 
