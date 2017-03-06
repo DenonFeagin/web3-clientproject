@@ -354,6 +354,11 @@ section:nth-of-type(5) h2+div {
 #smoothies {
 	justify-content: space-around;
 /*	align-content: flex-start;*/
+	overflow-y: scroll;
+}
+
+section:nth-of-type(6) {
+	flex-flow: row wrap;
 }
 
 section:nth-of-type(6)>div:first-of-type {
