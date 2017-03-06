@@ -51,7 +51,7 @@ h3, dt {
 }
 
 h3, .thin-sub, dt {
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	text-transform: uppercase;
 }
 
@@ -78,7 +78,7 @@ p {
 
  /*SINGLE*/
 
- section:first-of-type, section:nth-of-type(3), section:nth-of-type(5), section:first-of-type>div, section:nth-of-type(3)>div {
+ section:first-of-type, section:nth-of-type(3), section:nth-of-type(6), section:nth-of-type(5), section:first-of-type>div, section:nth-of-type(3)>div {
  	justify-content: center;
  	align-items: center;
  	
@@ -312,21 +312,30 @@ section:nth-of-type(4) .btn:hover {
 
 /*FLAVOR & EXTRAS*/
 
+section:nth-of-type(5) h2+div {
+	justify-content: space-around;
+}
+
  section:nth-of-type(5)>div {
- 	align-content: center;
+ 	/*align-content: center;*/
  	border-color: #0baaa2;
  }
 
-section:nth-of-type(5)>div>div {
+/*section:nth-of-type(5)>div>div {
 	width: 95%;
-}
+}*/
 
 .thin-sub {
 	font-weight: 300;
 }
 
 .prices, .prices span, .description {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
+	line-height: 1.4rem;
+}
+
+.prices, .description {
+	padding-bottom: 15px;
 }
 
 .prices span {
@@ -335,12 +344,24 @@ section:nth-of-type(5)>div>div {
 }
 
 .lg-col-1-2-menu {
-	width: 45%;
+	width: 38%;
 }
 
 /*END*/
 
 /*MENU*/
+
+#smoothies {
+	justify-content: space-around;
+/*	align-content: flex-start;*/
+}
+
+section:nth-of-type(6)>div:first-of-type {
+	height: 94%;
+	width: 97%;
+
+	border: 6px solid #fb8dcb;
+}
 
 /*END*/
 
