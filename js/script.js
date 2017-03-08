@@ -7,7 +7,7 @@ $(document).ready(function(){
 	  $( this ).addClass('pulse');
 	});
 
-
+	
 
 
 });
