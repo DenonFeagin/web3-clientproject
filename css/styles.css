@@ -351,10 +351,26 @@ section:nth-of-type(5) h2+div {
 
 /*MENU*/
 
+section.menu {
+	flex-direction: column;
+}
+
+.lg-col-1-3 {
+	width: 30%;
+}
+
+#menu-area {
+	width: 65%;
+}
+
+.menu .lg-col-1-2 {
+	width: 45%
+}
+
 #smoothies {
 	justify-content: space-around;
 /*	align-content: flex-start;*/
-	overflow-y: scroll;
+/*	overflow-y: scroll;*/
 }
 
 section:nth-of-type(6) {
@@ -369,6 +385,19 @@ section:nth-of-type(6)>div:first-of-type {
 }
 
 /*END*/
+
+/*TESTING MENU*/
+
+#menu-area div {
+	display: none;
+}
+
+#menu-area.smoothies .smoothies,
+#menu-area.hot-iced .hot-iced,
+#menu-area.blended .blended, 
+#menu-area.beans .beans {
+  display: inline-block;
+}
 
 /*CONTACT*/
 
