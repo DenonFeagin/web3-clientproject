@@ -3,6 +3,18 @@ $(document).ready(function(){
 	// 	$('.btn').addClass('pulse');
 	// })
 
+	$('.mobile-btn-wrapper').click(function(){
+		$('.mobile-nav').slideToggle();
+	})
+
+		var $window = $(window);
+		  $window.on('resize', function (){
+	        if ($window.width() > 720)
+	        {
+	            $('.mobile-nav').hide();
+	        }
+	    });
+
 	
 
 	var scroll_start = 0;
