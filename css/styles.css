@@ -146,7 +146,7 @@ nav li a {
 
 nav {
 	/*border: 3px solid #fff;*/
-	width: 115px;
+	width: 105px;
 	display: inline-block;
 
 	position: fixed;
@@ -157,7 +157,7 @@ nav {
 nav li {
 	font-weight: 600;
 
-	padding: 8px;
+	padding: 5px;
 	border-bottom: 2.5px solid #fff;
 	border-top: 2.5px solid #fff;
 	border-left: 4px solid #fff;
@@ -167,7 +167,7 @@ nav li {
 
 .navbar-default{
     background:transparent;
-    border:none !important;
+    border-color:none !important;
 }
 
 nav li:first-of-type {
@@ -197,8 +197,8 @@ nav li:nth-of-type(2):hover {
 
 nav li:nth-of-type(3):hover {
 	color: #fff;
-	background-color: #65e1c9;
-	border-color: #65e1c9;
+	background-color: #fb8dcb;
+	border-color: #fb8dcb;
 }
 
 nav li:last-of-type:hover {
@@ -317,7 +317,7 @@ section:nth-of-type(4) .btn:hover {
 
 /*FLAVOR & EXTRAS*/
 
-section:nth-of-type(5) h2+div {
+section:nth-of-type(5) .flav-title+div {
 	justify-content: space-around;
 }
 
@@ -326,8 +326,8 @@ section:nth-of-type(5) h2+div {
  	border-color: #0baaa2;
  }
 
-section:nth-of-type(5) h2 {
-	padding: 3% 0 0 6%;
+.flav-title {
+	padding: 3% 0 3% 6%;
 }
 
 .thin-sub {

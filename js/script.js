@@ -10,9 +10,21 @@ $(document).ready(function(){
 	   $(document).scroll(function() { 
 	      scroll_start = $(this).scrollTop();
 	      if(scroll_start > offset.top) {
-	          $(".navbar-default").css('background-color', '#000000');
+	          $(".navbar-default").css('background-color', '#fff');
 	       } else {
 	          $('.navbar-default').css('background-color', 'transparent');
+	       }
+
+	       if(scroll_start > offset.top) {
+	          $(".navbar-default li").css('border-color', '#000');
+	       } else {
+	          $('.navbar-default li').css('border-color', '#fff');
+	       }
+
+	       if(scroll_start > offset.top) {
+	          $(".navbar-default a").css('color', '#000');
+	       } else {
+	          $('.navbar-default a').css('color', '#fff');
 	       }
 	   });
 	    }
