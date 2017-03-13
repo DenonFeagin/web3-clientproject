@@ -11,7 +11,6 @@ $(document).ready(function(){
 	   if (startchange.length){
 	   $(document).scroll(function() { 
 	      scroll_start = $(this).scrollTop();
-	      console.log(this)
 	      if(scroll_start > offset.top) {
 	          $(".navbar-default").css('background-color', '#fff');
 	       } else {

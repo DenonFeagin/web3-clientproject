@@ -56,7 +56,7 @@ h3, .thin-sub, dt {
 }
 
 p {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	line-height: 2rem;
 }
 
@@ -149,6 +149,10 @@ nav li a {
 	background-color: #f8f8f8;
 	width: 100%;
 	text-align: left;
+}
+
+.mobile-btn-wrapper {
+	display: none;
 }
 
 .mobile-nav:hover {
@@ -539,6 +543,19 @@ section:last-of-type .btn:hover {
 /*END*/
 
 @media all and (max-width: 720px) {
+
+	.mobile-btn-wrapper {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.main-nav {
+		display: none;
+	}
+
+	.fa {
+		font-size: 3rem;
+	}
 
 	h2 {
 		font-size: 2.8rem;
