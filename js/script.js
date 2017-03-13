@@ -3,12 +3,15 @@ $(document).ready(function(){
 	// 	$('.btn').addClass('pulse');
 	// })
 
+	
+
 	var scroll_start = 0;
 	   var startchange = $('#startchange');
 	   var offset = startchange.offset();
-	    if (startchange.length){
+	   if (startchange.length){
 	   $(document).scroll(function() { 
 	      scroll_start = $(this).scrollTop();
+	      console.log(this)
 	      if(scroll_start > offset.top) {
 	          $(".navbar-default").css('background-color', '#fff');
 	       } else {
@@ -32,6 +35,8 @@ $(document).ready(function(){
 	$( ".btn" ).hover(function() {
 	  $( this ).addClass('pulse');
 	});
+
+	$("#menu-area").addClass("smoothies");
 
 	$("#smoothies").click(function() {
 		$("#menu-area").removeClass();

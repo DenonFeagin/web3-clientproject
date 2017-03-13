@@ -144,6 +144,23 @@ nav li a {
 	padding: 2rem;*/
 }
 
+.mobile-nav {
+	display: none;
+	background-color: #f8f8f8;
+	width: 100%;
+	text-align: left;
+}
+
+.mobile-nav:hover {
+	background-color: #fff;
+}
+
+.mobile-nav a {
+	width: 100%;
+	display: inline-block;
+	color: #000;
+}
+
 nav {
 	/*border: 3px solid #fff;*/
 	width: 105px;
@@ -350,6 +367,10 @@ section:nth-of-type(5) .flav-title+div {
 	color: #0baaa2;
 }
 
+.menu .prices span {
+	color: #fb8dcb;
+}
+
 .lg-col-1-2-menu {
 	width: 38%;
 }
@@ -362,6 +383,20 @@ dd {
 /*END*/
 
 /*MENU*/
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
 
 section.menu {
 	flex-direction: column;
@@ -547,6 +582,8 @@ section:last-of-type .btn:hover {
 	.landing nav {
 		display: none;
 	}
+
+	
 
 	.landing div {
 		padding-top: 45px;
