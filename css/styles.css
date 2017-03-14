@@ -482,6 +482,14 @@ section:nth-of-type(6)>div:first-of-type {
 	flex-direction: column;
 }
 
+#menu-area .favorites {
+	display: inline-block;
+}
+
+#menu-area .hot-iced .lg-col-1-2:last-of-type {
+	padding-top: 33px;
+}
+
 /*END*/
 
 /*menu nav*/
@@ -517,9 +525,17 @@ button:focus {
 #menu-area.hot-iced .hot-iced,
 #menu-area.blended .blended, 
 #menu-area.beans .beans {
-  display: flex;
+  	display: flex;
   	justify-content: space-around;
 }
+
+/*HOT AND ICED DRINK & BEANS AND THINGS EXTRA INFO*/
+
+#menu-area .lg-col-1-2:first-of-type, #menu-area .foodies, #menu-area .beans .lg-col-1-2 {
+	display: inline;
+}
+
+/*END*/
 
 /*CONTACT*/
 
@@ -773,6 +789,19 @@ address {
 		margin-top: 40px;
 	}
 
+	section:nth-of-type(5) .flav-title+div {
+		display: inline-block;
+	}
+
+	#menu .lg-col-1-2-menu:first-of-type, #menu .lg-col-1-2-menu:last-of-type {
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	.child:last-of-type {
+		padding-top: 32px;
+	}
+
 }	
 
 @media all and (max-width: 480px) {
@@ -837,6 +866,7 @@ address {
 
 	section:nth-of-type(4) {
 		flex-direction: column-reverse;
+		height: 70vh;
 	}
 
 	.menu .menu-nav {
@@ -860,6 +890,14 @@ address {
 	section:nth-of-type(6)>div:first-of-type {
 		background-color: #fb8dcb;
 		border-bottom: 20px solid #fb8dcb;
+	}
+
+	#menu-area .hot-iced .lg-col-1-2:last-of-type {
+		padding-top: 29px;
+	}
+
+	.child:last-of-type {
+		padding-top: 28px;
 	}
 
 	/*END*/
