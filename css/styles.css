@@ -30,7 +30,7 @@ body {
 
 section, .landing {
 	height: 100vh;
-	min-height: 650px;
+	min-height: 450px;
 }
 
 .flex, .fruit, .study, .coffee {
@@ -97,7 +97,7 @@ p {
 
  .center {
  	text-align: center;
- 	width: 45%;
+ 	width: 35%;
  }
 
  .center h2 {
@@ -295,7 +295,7 @@ section:first-of-type .btn:hover {
 /*OUR FRUIT*/
 
 section:nth-of-type(2)>div:first-of-type {
-	min-height: 450px;
+	min-height: 250px;
 	background-image: url(../img/fruit.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -303,7 +303,7 @@ section:nth-of-type(2)>div:first-of-type {
 }
 
 section:nth-of-type(2)>div:last-of-type div, section:nth-of-type(4)>div:first-of-type div, section:last-of-type>div:last-of-type div {
-	width: 70%;
+	width: 60%;
 	max-width: 80%;
 	text-align: left;
 }
@@ -347,7 +347,7 @@ section:nth-of-type(3) .btn:hover {
 /*STUDY ZONE*/
 
 section:nth-of-type(4)>div:last-of-type {
-	min-height: 450px;
+	min-height: 250px;
 	background-image: url(../img/study-zone.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -540,7 +540,7 @@ button:focus {
 /*CONTACT*/
 
 section:last-of-type>div:first-of-type {
-	min-height: 450px;
+	min-height: 250px;
 	background-image: url(../img/contact.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -670,6 +670,11 @@ address {
 }
 
 @media all and (max-width: 720px) {
+
+	section:nth-of-type(2)>div:last-of-type div, section:nth-of-type(4)>div:first-of-type div, section:last-of-type>div:last-of-type div {
+		width: 90%;
+	}
+
 	#menu {
 		height: auto;
 		margin-top: 20px;
@@ -735,12 +740,12 @@ address {
 	}
 
 	p {
-		font-size: 1.4rem;
-		line-height: 2.1rem;
+		font-size: 1.2rem;
+		line-height: 1.6rem;
 	}
 
 	.btn {
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 	}
 
 	/*LANDING*/
@@ -806,6 +811,10 @@ address {
 
 @media all and (max-width: 480px) {
 	/*GENERAL STYLES*/	
+
+	/*.bg-img {
+		height: 300px;
+	}*/
 
 	.sm-col-1, .sm-col-1 div {
 		width: 100%;
@@ -883,13 +892,15 @@ address {
 	}
 
 	#menu-area {
-		width: 85%;
+		width: 100%;
+		padding-bottom: 10px 0;
 		background-color: #fff;
 	}
 
 	section:nth-of-type(6)>div:first-of-type {
 		background-color: #fb8dcb;
-		border-bottom: 20px solid #fb8dcb;
+		/*border-bottom: 20px solid #fb8dcb;*/
+
 	}
 
 	#menu-area .hot-iced .lg-col-1-2:last-of-type {
