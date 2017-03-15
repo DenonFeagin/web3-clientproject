@@ -489,6 +489,34 @@ section:last-of-type>div:first-of-type {
 	left: 78%;
 }
 
+.menu-pos {
+	position: relative;
+}
+
+.menu-pos img:first-of-type {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+}
+
+.menu-pos img:last-of-type {
+	position: absolute;
+	top: 70%;
+	left: 2%;
+}
+
+.menu-pos.hot-iced img {
+	position: absolute;
+	top: 75%;
+	left: 25%;
+}
+
+.menu-pos.blended img {
+	position: absolute;
+	top: 100%;
+	left: 20%;
+}
+
 .animate {
 	animation-name: icon-rotate;
 	animation-duration: 2s;
@@ -589,6 +617,10 @@ section:last-of-type>div:first-of-type {
 
 @media all and (max-width: 1376px) {
 
+	h2 {
+		font-size: 4rem;
+	}
+
 	.lg-col-1-2-menu {
 		justify-content: space-around;
 	}
@@ -605,9 +637,54 @@ section:last-of-type>div:first-of-type {
 		width: 50%;
 	}
 
+	.information.col-1-2-content {
+		width: 80%;
+	}
+
+	.center {
+		width:45%;
+	}
+
+	.center .btn {
+		margin-top:50px;
+	}
+
+	.people-dancing-icon:first-of-type {
+		left: 5%;
+	}
+
+	.people-dancing-icon:last-of-type {
+		left: 82%;
+	}
+
+	.beans-dancing-icon:first-of-type {
+		left: 7%;
+	}
+
+	.beans-dancing-icon:nth-of-type(2) {
+		left: 15%;
+	}
+
+	.beans-dancing-icon:last-of-type {
+		left: 80%;
+	}
+
 }
 
 @media all and (max-width: 970px) {
+
+	h2 {
+		font-size: 3rem;
+	}
+
+	section:last-of-type .btn {
+		margin-top: 20px;
+	}
+
+	.beans-dancing-icon:last-of-type {
+		width: 150px;
+		left: 78%;
+	}
 
 	.lg-col-1-2-menu {
 		height: auto;
@@ -633,6 +710,10 @@ section:last-of-type>div:first-of-type {
 
 @media all and (max-width: 830px) {
 
+	h2 {
+		font-size: 2.5rem;
+	}
+
 	#menu .lg-col-1-2-menu:first-of-type {
 		width: 30%;
 	}
@@ -647,6 +728,10 @@ section:last-of-type>div:first-of-type {
 
 	.menu-nav button {
 		font-size: 1.7rem;
+	}
+
+	#menu>div>div {
+		overflow-y: scroll;
 	}
 
 }
