@@ -10,7 +10,7 @@
 	-group common styles/use group selectors
 */
 
-/*REPEATED STYLES*/
+/*REPEATED COLORS*/
 
 .btn, .mobile-nav a, address a,#phone  {
 	color:#000;
@@ -56,7 +56,7 @@ section:first-of-type, section:nth-of-type(3), section:nth-of-type(6), section:n
 
 /*END FLEX PROPERTIES*/
 
-/*basic styles*/
+/*BASIC STYLES*/
 
 html * {
 	padding:0;
@@ -75,8 +75,8 @@ body {
 }
 
 section, .landing {
-	height:100vh;
-	min-height:450px;
+	height: 100vh;
+	min-height: 550px;
 }
 
 h1, h2, .prices, .prices span, button {
@@ -129,14 +129,6 @@ p {
 	width:50%;
 }
 
-section:first-of-type>div, section:nth-of-type(3)>div, section:nth-of-type(5)>div {
-	height:94%;
-	width:97%;
-	border:6px solid #8ca7f9;
-
-	position: relative;
-}
-
 .center {
 	width:35%;
 }
@@ -166,136 +158,6 @@ h1 {
 
 .head-dif:last-of-type {
 	font-size:3.7rem;
-}
-
-nav li a {
-	font-size:1.3rem;
-}
-
-.mobile-nav {
-	width:100%;
-	padding-bottom:45px;
-	background:#f8f8f8;
-
-	z-index: 1;
-}
-
-.mobile-nav>ul>li {
-	list-style:none;
-	width:30%;
-	line-height:2rem;
-}
-
-.mobile-nav li:first-of-type:hover, nav li:first-of-type:hover {
-	background:#65e1c9;
-}
-
-.mobile-nav li:nth-of-type(2):hover, nav li:nth-of-type(2):hover, section:first-of-type .btn:hover  {
-	background:#b5dbe6;
-}
-
-.mobile-nav li:nth-of-type(3):hover, nav li:nth-of-type(3):hover, button, .lg-col-1-3 {
-	background:#fb8dcb;
-}
-
-.mobile-nav li:last-of-type:hover, nav li:last-of-type:hover {
-	background:#f8dec7;
-}
-
-.mobile-nav a {
-	width:100%;
-	font-size:1.5rem;
-}
-
-nav {
-	width:105px;
-	position:fixed;
-	top:0;
-	left:0;
-
-	z-index: 2;
-}
-
-nav li {
-	font-weight:600;
-	padding:5px;
-	border-bottom:2.5px solid #fff;
-	border-top:2.5px solid #fff;
-	border-left:4px solid #fff;
-	border-right:4px solid #fff;
-}
-
-.navbar-default {
-	background:none;
-}
-
-nav li:first-of-type {
-	border-top:4px solid #fff;
-}
-
-nav li:last-of-type {
-	border-bottom:4px solid #fff;
-}
-
-nav li:hover {
-	font-weight:700;
-}
-
-.hero p {
-	width:40%;
-}
-
-h1+p {
-	padding-top:3.5rem;
-	line-height:2.5rem;
-	font-size:1.6rem;
-}
-
-section:first-of-type>div,section:first-of-type .btn {
-	border-color:#b5dbe6;
-}
-
-.col-1-2-content {
-	width:60%;
-	max-width:80%;
-}
-
-.col-1-2-content img {
-	padding-bottom:2.5rem;
-}
-
-section:nth-of-type(2) .btn {
-	border-color:#8ca7f9;
-	margin-top:50px;
-}
-
-section:nth-of-type(2) .btn:hover {
-	background:#8ca7f9;
-}
-
-section:nth-of-type(3)>div,section:nth-of-type(3) .btn {
-	border-color:#fc8dcb;
-}
-
-section:nth-of-type(3) .btn:hover {
-	background:#fc8dcb;
-}
-
-section:nth-of-type(4) .btn {
-	border-color:#f9e88c;
-	margin-top:50px;
-}
-
-section:nth-of-type(4) .btn:hover {
-	background:#f9e88c;
-}
-
-section:nth-of-type(5) .flav-title+div, #menu-area.smoothies .smoothies,#menu-area.hot-iced .hot-iced,#menu-area.blended .blended,#menu-area.beans .beans {
-	justify-content:space-around;
-}
-
-section:nth-of-type(5)>div {
-	border-color:#0baaa2;
 }
 
 .flav-title {
@@ -347,6 +209,20 @@ dd {
 	-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.5);
 }
 
+::-moz-scrollbar {
+	width:15px;
+}
+
+::-moz-scrollbar-track {
+	-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);
+	border-radius:10px;
+}
+
+::-moz-scrollbar-thumb {
+	border-radius:10px;
+	-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.5);
+}
+
 .lg-col-1-3 {
 	height:100%;
 	width:38%;
@@ -362,8 +238,160 @@ dd {
 
 #menu-area {
 	overflow-y:scroll;
-	height:85%;
+	height:75%;
 	width:65%;
+}
+
+#menu-area .hot-iced .lg-col-1-2:last-of-type {
+	padding-top:33px;
+}
+
+/*NAVIGATION*/
+
+nav li a {
+	font-size:1.3rem;
+}
+
+/*MOBILE NAVIGATION*/
+
+.mobile-nav {
+	width:100%;
+	padding-bottom:45px;
+	background:#f8f8f8;
+
+	z-index: 1;
+}
+
+.mobile-nav>ul>li {
+	list-style:none;
+	width:30%;
+	line-height:2rem;
+}
+
+.mobile-nav li:first-of-type:hover, nav li:first-of-type:hover {
+	background:#65e1c9;
+}
+
+.mobile-nav li:nth-of-type(2):hover, nav li:nth-of-type(2):hover, section:first-of-type .btn:hover  {
+	background:#b5dbe6;
+}
+
+.mobile-nav li:nth-of-type(3):hover, nav li:nth-of-type(3):hover, button, .lg-col-1-3 {
+	background:#fb8dcb;
+}
+
+.mobile-nav li:last-of-type:hover, nav li:last-of-type:hover {
+	background:#f8dec7;
+}
+
+.mobile-nav a {
+	width:100%;
+	font-size:1.5rem;
+}
+
+/*MOBILE NAVIGATION END*/
+
+nav {
+	width:105px;
+	position:fixed;
+	top:0;
+	left:0;
+
+	z-index: 2;
+}
+
+nav li {
+	font-weight:600;
+	padding:5px;
+	border-bottom:2.5px solid #fff;
+	border-top:2.5px solid #fff;
+	border-left:4px solid #fff;
+	border-right:4px solid #fff;
+}
+
+.navbar-default {
+	background:none;
+}
+
+nav li:first-of-type {
+	border-top:4px solid #fff;
+}
+
+nav li:last-of-type {
+	border-bottom:4px solid #fff;
+}
+
+nav li:hover {
+	font-weight:700;
+}
+
+/*NAVIGATION END*/
+
+/*SECTIONS*/
+
+.hero p {
+	width:40%;
+}
+
+h1+p {
+	padding-top:3.5rem;
+	line-height:2.5rem;
+	font-size:1.6rem;
+}
+
+section:first-of-type>div, section:nth-of-type(3)>div, section:nth-of-type(5)>div {
+	height:94%;
+	width:97%;
+	border:6px solid #8ca7f9;
+
+	position: relative;
+}
+
+section:first-of-type>div,section:first-of-type .btn {
+	border-color:#b5dbe6;
+}
+
+.col-1-2-content {
+	width:60%;
+	max-width:80%;
+}
+
+.col-1-2-content img {
+	padding-bottom:2.5rem;
+}
+
+section:nth-of-type(2) .btn {
+	border-color:#8ca7f9;
+	margin-top:50px;
+}
+
+section:nth-of-type(2) .btn:hover {
+	background:#8ca7f9;
+}
+
+section:nth-of-type(3)>div,section:nth-of-type(3) .btn {
+	border-color:#fc8dcb;
+}
+
+section:nth-of-type(3) .btn:hover {
+	background:#fc8dcb;
+}
+
+section:nth-of-type(4) .btn {
+	border-color:#f9e88c;
+	margin-top:50px;
+}
+
+section:nth-of-type(4) .btn:hover {
+	background:#f9e88c;
+}
+
+section:nth-of-type(5) .flav-title+div, #menu-area.smoothies .smoothies,#menu-area.hot-iced .hot-iced,#menu-area.blended .blended,#menu-area.beans .beans {
+	justify-content:space-around;
+}
+
+section:nth-of-type(5)>div {
+	border-color:#0baaa2;
 }
 
 section:nth-of-type(6) {
@@ -375,9 +403,9 @@ section:nth-of-type(6)>div:first-of-type {
 	width:97%;
 }
 
-#menu-area .hot-iced .lg-col-1-2:last-of-type {
-	padding-top:33px;
-}
+/*END SECTIONS*/
+
+/*BUTTONS*/
 
 button {
 	font-size:2.2rem;
@@ -397,6 +425,8 @@ button:focus {
 	-o-outline:none;
 	-webkit-outline:none;
 }
+
+/*END BUTTONS*/
 
 #menu-area .lg-col-1-2:first-of-type, #menu-area .foodies, #menu-area .beans .lg-col-1-2 {
 	display:inline;
@@ -528,8 +558,6 @@ section:last-of-type>div:first-of-type {
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
 }
-
-
 
 /*IMAGES END*/
 
@@ -706,6 +734,24 @@ section:last-of-type>div:first-of-type {
 		width: 90%;
 	}
 
+	#menu-area {
+		height: 90%;
+	}
+
+	#meun-area .lg-col-1-2:first-of-type {
+		width: 100%;
+	}
+
+	#menu-area.smoothies .smoothies, #menu-area.hot-iced .hot-iced, #menu-area.blended .blended, #menu-area.beans .beans {
+		display: block;
+		width: 100%;
+		padding: 15px;
+	}
+
+	.people-dancing-icon, .beans-dancing-icon, .menu-pos img {
+		display: none;
+	}
+
 }
 
 @media all and (max-width: 830px) {
@@ -874,6 +920,9 @@ section:last-of-type>div:first-of-type {
 		padding-top: 32px;
 	}
 
+	div.flav-title {
+		text-align: center;
+	}
 }	
 
 @media all and (max-width: 480px) {
@@ -942,7 +991,8 @@ section:last-of-type>div:first-of-type {
 
 	section:nth-of-type(4) {
 		flex-direction: column-reverse;
-		height: 70vh;
+		height: 56vh;
+		margin-bottom: 40px;
 	}
 
 	.menu .menu-nav {
@@ -959,7 +1009,8 @@ section:last-of-type>div:first-of-type {
 	}
 
 	#menu-area {
-		width: 100%;
+		width: 86%;
+		height: 80%;
 		padding: 10px 0;
 		background-color: #fff;
 	}
@@ -967,7 +1018,6 @@ section:last-of-type>div:first-of-type {
 	section:nth-of-type(6)>div:first-of-type {
 		background-color: #fb8dcb;
 		/*border-bottom: 20px solid #fb8dcb;*/
-
 	}
 
 	#menu-area .hot-iced .lg-col-1-2:last-of-type {
@@ -976,6 +1026,10 @@ section:last-of-type>div:first-of-type {
 
 	.child:last-of-type {
 		padding-top: 28px;
+	}
+
+	section:nth-of-type(2)>div:first-of-type, section:nth-of-type(2)>div:last-of-type, section:nth-of-type(4)>div:first-of-type, section:nth-of-type(4)>div:last-of-type, section:last-of-type>div:first-of-type, section:last-of-type>div:last-of-type {
+		margin-bottom: 75px;
 	}
 
 	/*END*/
